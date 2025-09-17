@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Search Houses</title>
+</head>
+<body>
+    <h2>Search Houses</h2>
+
+    <form action="/houses/search/price" method="get">
+        <label>Price Range:</label><br>
+        Start: <input type="number" name="start" required>
+        End: <input type="number" name="end" required>
+        <button type="submit">Search by Price</button>
+    </form>
+
+    <br><br>
+
+    <form action="/houses/search/cities" method="get">
+        <label>Enter Cities (comma separated):</label><br>
+        <input type="text" name="cities" placeholder="London,Paris,Delhi">
+        <button type="submit">Search by Cities</button>
+    </form>
+</body>
+</html>
